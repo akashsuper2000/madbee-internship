@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+	<head>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+		<link rel="stylesheet" href="./table-style.css"/>
+		<script src="https://www.w3schools.com/lib/w3.js"></script>
+		<script src="./table-script.js"></script>
+		<title>Title</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
+		<script>
+			function init(){
+				var n = document.getElementsByClassName('table').length;
+				var elem = document.getElementsByClassName('table');
+				for(var i=0; i<n; i++){
+					elem[i].setAttribute("vertical-align","center");
+				}
+		}</script>
+	</head>
+
+	<body>
+		<div class="parent">
+
+			<div class="top"><a href="file:///D:/Education/Others/Summer/bike_and_barrel/login.html" class="top-link"><h3 class="nobreak">Logout</h3><h1 class="nobreak"><i class="fas fa-user"></i></h1></a></div>
+			<div class="container">
+            <h2 class="top-title">Table</h2>
+            <table id="myTable" class="table table-borderless table-hover">
+                <tr style="background-color: #909090;">
+                    <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(1)')">Request ID</th>
+                    <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(2)')">User ID</th>
+                    <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(3)')">No. of Guests</th>
+                    <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(4)')">Request Date</th>
+                    <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(5)')">Details</th>
+                    <th onclick="w3.sortHTML('#myTable', '.item', 'td:nth-child(6)')">Status</th>
+                </tr>
+                <tr class='item'>
+                    <td>C2</td>
+                    <td>001</td>
+                    <td>2018/01/28</td>
+                    <td>C4</td>
+                    <td>C5</td>
+                    <td><div class="btn-group">
+                        <label class="btn btn-success disabled">
+						    <input type="radio" name="options" id="11" class="button" onclick="status(event)"> Accept
+						  </label>
+						  <label class="btn btn-danger disabled">
+						    <input type="radio" name="options" id="12" class="button" onclick="status(event)"> Reject
+						  </label>
+						  <label class="btn btn-light active">
+						    <input type="radio" name="options" id="13" class="button" onclick="status(event)"> Pending
+						  </label>
+                    </div>
+                	</td>
+                </tr>
+                <tr class='item'>
+                    <td>C2</td>
+                    <td>001</td>
+                    <td>2018/01/28</td>
+                    <td>C4</td>
+                    <td>C5</td>
+                    <td><div class="btn-group">
+                        <label class="btn btn-success disabled">
+						    <input type="radio" name="options" id="21" class="button" onclick="status(event)"> Accept
+						  </label>
+						  <label class="btn btn-danger disabled">
+						    <input type="radio" name="options" id="22" class="button" onclick="status(event)"> Reject
+						  </label>
+						  <label class="btn btn-light active">
+						    <input type="radio" name="options" id="23" class="button" onclick="status(event)"> Pending
+						  </label>
+                    </div>
+                	</td>
+                </tr>
+                <tr class='item'>
+                    <td>C2</td>
+                    <td>001</td>
+                    <td>2018/01/28</td>
+                    <td>C4</td>
+                    <td>C5</td>
+                    <td><div class="btn-group">
+                        <label class="btn btn-success disabled">
+						    <input type="radio" name="options" id="31" class="button" onclick="status(event)"> Accept
+						  </label>
+						  <label class="btn btn-danger disabled">
+						    <input type="radio" name="options" id="32" class="button" onclick="status(event)"> Reject
+						  </label>
+						  <label class="btn btn-light active">
+						    <input type="radio" name="options" id="33" class="button" onclick="status(event)"> Pending
+						  </label>
+                    </div>
+                	</td>
+                </tr>            
+            </table>
+        </div>
+    </div>
+
+		<script>
+</script>
+	</body>
+
+</html>

@@ -1,0 +1,59 @@
+﻿body {
+    margin: 0px;
+    background-color: white;
+}
+
+.parent {
+    height: 100vh;
+    background-color: #a0a0a0;
+}
+
+tr:nth-child(odd) {
+    background-color: #d5d5d5;
+}
+
+tr:nth-child(even) {
+    background-color: #f5f5f5;
+}
+
+th, tr {
+    text-align: center;
+}
+
+th {
+    font-family: bike;
+}
+
+    th:hover {
+        cursor: pointer;
+    }
+
+.container {
+    border-color: #000000;
+    padding-bottom: 2%;
+}
+
+.top-title {
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-family: bike;
+    text-align: center;
+}
+
+.table {
+    background-color: #d0d0d0;
+    font-family: bike-light;
+    border-color: 2px solid black;
+}
+
+.nobreak {
+    display: inline;
+    padding-left: 1%;
+    font-family: bike;
+}
+
+.bottom {
+    background-color: #a0a0a0;
+    height: 90%;
+    overflow-y: auto;
+}

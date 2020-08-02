@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="./csstut-style.css"/>
+<!--<link rel="stylesheet" href="./bootstrap/css/bootstrap.css"/>-->
+<script src="./csstut-script.js"></script>
+<script src="./bootstrap/js/bootstrap.js"></script>
+<title>Best offers on your Car Insurance</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8">
+</head>
+<body>
+	<div class="parent_container">
+		<div class="div1"></div>
+		<div class="div2"></div>
+		<div class="overlay">
+			<div class="top"></div>
+			<h1 class="header">Best offers on your car insurance</h1>
+			<h5 class="header_desc">Car Insurance Renewals made easy</h5>
+			<form id="form" onsubmit="return verify()" method="post" action="http://localhost:8080/myaction" target="_blank">
+				<div class="form-group">
+					<p class="subheads">Your name</p>
+					<input type="text" name="name"/><br/>
+				</div>
+				<div class="form-group">
+					<p class="subheads">Choose your vehicle</p>
+					<label class="container">
+						<input id="car" type="radio" name="radio" checked="checked" onchange="carChecked()">Car
+						<span class="checkmark"></span>
+					</label>
+					<label class="container">
+						<input id="bike" type="radio" name="radio" onchange="bikeChecked()">Bike
+						<span class="checkmark"></span>
+					</label>
+				</div>
+				<div>
+					<p class="subheads car_options">Select your car model</p>
+					<p class="subheads bike_options" style="display: none;">Select your bike model</p>
+					<select class="car_options" name="car">
+			    		<option name="0">Select car</option>
+					    <option name="1">Audi</option>
+					    <option name="2">BMW</option>
+					    <option name="3">Fiat</option>
+					    <option name="4">Ford</option>
+					    <option name="5">Honda</option>
+					    <option name="6">Jaguar</option>
+					    <option name="7">Land Rover</option>
+					    <option name="8">Mercedes</option>
+					    <option name="9">Mini</option>
+					    <option name="10">Nissan</option>
+					    <option name="11">Toyota</option>
+					    <option name="12">Volvo</option>
+			  		</select>
+			  		<select class="bike_options" style="display: none;" name="bike">
+			    		<option name="0">Select bike</option>
+					    <option name="1">Splender</option>
+					    <option name="2">Pulsar</option>
+					    <option name="3">Shine</option>
+					    <option name="4">Ninja</option>
+					    <option name="5">Jive</option>
+					    <option name="6">Unicorn</option>
+					    <option name="7">Twister</option>
+					    <option name="8">Stunner</option>
+					    <option name="9">Hero</option>
+					    <option name="10">Duke</option>
+					    <option name="11">Activa</option>
+					    <option name="12">Scooty</option>
+			  		</select>
+			  	</div>
+			  	<div>
+					<p class="subheads">Enter your mobile number</p>
+					<input type="text" name="mobile" id="mobile" oninput="validateNumbers()">
+				</div>
+				<input type="submit" value="Submit">
+			</form>
+			<!--<script>
+				var query = window.location.search.substring(1);
+				if(query!='?'){
+					window.open('http://localhost:8080/?'+query);
+				}
+			</script>
+		-->
+		</div>
+
+	</div>
+
+</body>
+</html> 

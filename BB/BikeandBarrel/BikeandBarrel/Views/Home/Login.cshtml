@@ -1,0 +1,61 @@
+﻿@model BikeandBarrel.Models.Login
+
+<link rel="stylesheet" href="~/Content/Login.css">
+<script src="~/Scripts/Login-script.js"></script>
+
+<div class="parent">
+
+    <div class="image"><img src="~/Content/Image/BnBLogo.png" /></div>
+
+    @using (Html.BeginForm("Login", "Home", FormMethod.Post, new { @onsubmit ="return red()"} ))
+    {
+        <div class="login">
+            
+            <p class="subheads">Username</p>
+            <div class="form-group">
+                
+                @Html.EditorFor(model => model.name, new
+                {htmlAttributes = new { @id = "name", @type = "text", @name = "name"}})
+                @*<input id="name" type="text" name="name" />*@
+                <br />
+            </div>
+
+            <p class="subheads">Password</p>
+            <div class="form-group">
+                @Html.EditorFor(model => model.pwd, new
+                {htmlAttributes = new { @id = "pwd", @type = "password", @name = "pwd"}})
+                @*@<input id="pwd" type="password" name="pwd" />*@
+                <br />
+            </div>
+            @if(@ViewBag.Message!=null){
+                <div id="result" style="font-size: 20px; font-weight: bold; color: darkred; margin-left: 100px;" >@ViewBag.Message</div>
+
+            }
+                <input type="submit" value="Login">
+
+            <div class="bottom-image"><img src="~/Content/Image/_0000_The-Residency-Hotels.png" /></div>
+        </div>
+    }
+
+</div>
+
+@*<script type="text/javascript">
+    $(document).ready(color_red());
+
+    function color_red() {
+        var name = document.querySelector("name");
+        var pwd = document.querySelector("pwd");
+
+        var resultElement = document.getElementById("result");
+
+        //if (resultElement != null) {
+        //    resultElement.innerHTML = "<h1>Invalid</h1>";
+        //}
+
+        if (resultElement != null) {
+            name.style.backgroundColor = "red";
+            pwd.style.backgroundColor = "red";
+        }
+    
+    }
+</script>*@

@@ -1,0 +1,28 @@
+﻿@font-face {
+    font-family: 'bike';
+    src: url('../BB/Fonts/Choplin-Medium-DEMO.otf');
+}
+
+@font-face {
+    font-family: 'bike-light';
+    src: url('../BB/Fonts/Choplin-ExtraLight-DEMO.otf');
+}
+
+.top {
+    background-color: #505050;
+    height: 10%;
+    text-align: right;
+    padding: 1% 2% 1% 0%;
+    color: #d0d0d0;
+}
+
+.top-link {
+    color: white;
+}
+
+    .top-link:hover {
+        color: #d0d0d0;
+        font-style: normal;
+        text-decoration: none;
+        transition: 0.1s;
+    }

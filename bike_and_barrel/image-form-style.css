@@ -1,0 +1,18 @@
+body{
+    margin: 0px;
+    background-color: #a0a0a0;
+}
+
+.parent{
+    height: 100vh;
+    background-color: #a0a0a0;
+}
+
+input[type="file"]{
+	opacity: 1;
+}
+
+.fakefile{
+	cursor: pointer;
+	position: absolute;
+}
